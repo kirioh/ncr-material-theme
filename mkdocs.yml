@@ -1,0 +1,179 @@
+site_name: National Court Rules 1983
+
+# Project information
+site_author: Cieran Kelly
+site_description: >-
+  Create a branded static site from a set of Markdown files to host the
+  documentation of your Open Source or commercial project
+# Repository
+# repo_name: squidfunk/mkdocs-material
+# repo_url: https://github.com/squidfunk/mkdocs-material
+# edit_uri: ""
+
+# Copyright
+# copyright: Copyright &copy; 2022 Cieran Kelly
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+# Configuration
+theme:
+  name: material
+
+  # Static files
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  features:
+    - content.code.annotate
+    # - content.tabs.link
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - scheme: default
+      primary: grey
+      accent: blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  font:
+    text: PT Serif
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
+  # Page tree
+nav:
+  - Home: index.md
+  - P.1-Prelim.:
+    - Ord 1. Interpretive matters: ord_01.md
+    - Ord 2. Administrative Matters: ord_02.md
+  - P.2-Civil Juris.:
+    - Ord 3. Discovery Before Suit: ord_03.md
+    - Ord 4. Commencement of Proceedings: ord_04.md
+    - Ord 5. Parties and Causes of Action: ord_05.md
+    - Ord 6. Service of Documents: ord_06.md
+    - Ord 7. Notice of Intention to Defend: ord_07.md
+    - Ord 8. Pleadings: ord_08.md
+    - Ord 9. Discovery, Interrogatories and Admissions: ord_09.md
+    - Ord 10. Trial: ord_10.md
+    - Ord 10A. National Court (Commercial List) Rules: ord_10a.md
+    - Ord 11. Evidence: ord_11.md
+    - Ord 12. Judgements and Orders: ord_12.md
+    - Ord 13. Enforcement of Judgements: ord_13.md
+    - Ord 14. Miscellaneous Powers of Court: ord_14.md
+    - Ord 15. Administration and Trusts: ord_15.md
+    - Ord 16. Applications for Judicial Review: ord_16.md
+    - Ord 17. Applications for Habeas Corpus: ord_17.md
+  - P.3-Appellate Juris.:
+    - Ord 18. Appeal Rules: ord_18.md
+    - Schedules:
+      - schedules/ord_18_sch_a.md
+      - schedules/ord_18_sch_b.md
+      - schedules/ord_18_sch_c.md
+  - P.4-Probate Juris.:
+    - Ord 19. Probate Rules: ord_19.md
+  - P.5-Family Matters Juris.:
+    - Ord 20. Infants and Families: ord_20.md
+  - P.6-Admiralty:
+    - Ord 21. : ord_21.md
+  - P.7-Costs:
+    - Ord 22. : ord_22.md
+  - P.8-Human Rights:
+    - Ord 23. : ord_23.md
+    # - Changelog:
+    #   - ncr/abc.md
+    #   - How to upgrade: upgrade.md
+  # - Setup:
+  #   - Changing the colors: setup/changing-the-colors.md
+  #   - Changing the fonts: setup/changing-the-fonts.md
+  #   - Changing the language: setup/changing-the-language.md
+  #   - Changing the logo and icons: setup/changing-the-logo-and-icons.md
+  #   - Ensuring data privacy: setup/ensuring-data-privacy.md
+  #   - Setting up navigation: setup/setting-up-navigation.md
+  #   - Setting up site search: setup/setting-up-site-search.md
+  #   - Setting up site analytics: setup/setting-up-site-analytics.md
+  #   - Setting up social cards: setup/setting-up-social-cards.md
+  #   - Setting up tags: setup/setting-up-tags.md
+  #   - Setting up versioning: setup/setting-up-versioning.md
+  #   - Setting up the header: setup/setting-up-the-header.md
+  #   - Setting up the footer: setup/setting-up-the-footer.md
+  #   - Adding a git repository: setup/adding-a-git-repository.md
+  #   - Adding a comment system: setup/adding-a-comment-system.md
+  #   - Building for offline usage: setup/building-for-offline-usage.md
+  #   - Extensions:
+  #     - setup/extensions/index.md
+  #     - Python Markdown: setup/extensions/python-markdown.md
+  #     - Python Markdown Extensions: setup/extensions/python-markdown-extensions.md
+  # - Reference:
+  #   - reference/index.md
+  #   - Abbreviations: reference/abbreviations.md
+  #   - Admonitions: reference/admonitions.md
+  #   - Annotations: reference/annotations.md
+  #   - Buttons: reference/buttons.md
+  #   - Code blocks: reference/code-blocks.md
+  #   - Content tabs: reference/content-tabs.md
+  #   - Data tables: reference/data-tables.md
+  #   - Diagrams: reference/diagrams.md
+  #   - Footnotes: reference/footnotes.md
+  #   - Formatting: reference/formatting.md
+  #   - Icons + Emojis: reference/icons-emojis.md
+  #   - Images: reference/images.md
+  #   - Lists: reference/lists.md
+  #   - MathJax: reference/mathjax.md
+  # - Insiders:
+  #   - insiders/index.md
+  #   - Getting started:
+  #     - Installation: insiders/getting-started.md
+  #     - Changelog: insiders/changelog.md
+  # - Blog:
+  #   - blog/index.md
+  #   - 2021:
+  #     - blog/2021/the-past-present-and-future.md
+  #     - blog/2021/excluding-content-from-search.md
+  #     - blog/2021/search-better-faster-smaller.md
+
+  # Customization
+extra:
+  analytics:
+    provider: google
+    property: G-HH1J9SCFV4
+  social:
+    # - icon: fontawesome/brands/email
+    #   link: https://github.com/squidfunk
+    # - icon: fontawesome/brands/whatsapp
+    #   link: https://github.com/squidfunk
+    # - icon: fontawesome/brands/discord
+    #   link: https://gitter.im/squidfunk/mkdocs-material
+    - icon: fontawesome/brands/linkedin
+      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/CieranKelly6
+  generator: false
